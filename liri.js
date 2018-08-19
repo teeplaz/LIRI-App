@@ -7,7 +7,7 @@ var fs = require("fs");
 
 function logData() {
 		
-  fs.readFile("random.txt", "utf8", function(error, data) {
+  fs.readFile("file.txt", "utf8", function(error, data) {
     if (error) throw error;
     var loggedTxt = data.split(",");
     var command = loggedTxt[0];
